@@ -1,0 +1,7 @@
+Do not be simpleton, use Singleton
+Engineer, write Factory Method!
+Wáng Jìngzé stratagems for your Strategy
+Observer is not voyeurist
+Builder is not same as Factory Method
+Be flexible, adopt Adapters
+Prophecy is art, keep State of it
