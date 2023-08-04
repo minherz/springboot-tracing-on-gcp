@@ -6,17 +6,15 @@ Run the following command while substituting `VALUE` with the names of the servi
 ```bash
 gcloud builds submit "https://github.com/minherz/springboot-tracing-on-gcp" \
        --git-source-dir="src/VALUE" \
+       --git-source-revision="main" \
        --substitutions="_SERVICE_NAME=VALUE"
 ```
 
-The command can be run from any location.
+If you want to build from a different branch/tag of the repo, replace `main` with the name of the branch/tag.
 
 > [!NOTE]
-> The command will build the latest version in the `main` branch.
-> Use `--git-source-revision` argument to sepcify different Git branch or tag.
-
-A word of warning: the `gcloud` command will fail if you run the build with insufficient credentials or
-if the project you use to run the build does not have permissions to push to `us-docker.pkg.dev/minherz/examples` repo. 
+> `gcloud` command will fail if you run the build with insufficient credentials or
+> if the project you use to run the build does not have permissions to push to `us-docker.pkg.dev/minherz/examples` repo. 
 
 Cloud Build configuration was composed following [documentation].
 
