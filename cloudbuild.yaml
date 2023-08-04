@@ -1,0 +1,14 @@
+steps:
+- name: maven:3.9.3-eclipse-temurin-17-focal
+  entrypoint: mvn
+  args: ['--version']
+- name: maven:3.9.3-eclipse-temurin-17-focal
+  entrypoint: mvn
+  args: ['test']
+- name: maven:3.9.3-eclipse-temurin-17-focal
+  entrypoint: mvn
+  args: ['package','-Dmaven.test.skip=true']
+- name: gcr.io/cloud-builders/docker
+  args: ['build', '-t', 'us-docker.pkg.dev/minherz/examples/${_SERVICE_NAME}', '--build-arg=JAR_FILE=target/build-artifact', '.']
+
+images: ['us-docker.pkg.dev/minherz/examples/${_SERVICE_NAME}']
