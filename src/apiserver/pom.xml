@@ -23,8 +23,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-gcp-starter-logging</artifactId>
+			<version>1.2.8.RELEASE</version>
 		</dependency>
 
 		<dependency>
