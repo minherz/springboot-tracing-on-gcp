@@ -23,15 +23,13 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
+			<groupId>com.google.cloud</groupId>
 			<artifactId>spring-cloud-gcp-starter-logging</artifactId>
-			<version>1.2.8.RELEASE</version>
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
+			<groupId>com.google.cloud</groupId>
 			<artifactId>spring-cloud-gcp-starter-trace</artifactId>
-			<version>1.2.8.RELEASE</version>
 		</dependency>
 
 		<dependency>
