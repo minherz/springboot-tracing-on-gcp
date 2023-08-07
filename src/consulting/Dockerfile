@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM openjdk:17-jdk-alpine
+FROM eclipse-temurin:17.0.4.1_1-jre-alpine
 ARG JAR_FILE=JAR_FILE_MUST_BE_SPECIFIED_AS_BUILD_ARG
 COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java", "-jar", "/app.jar"]
